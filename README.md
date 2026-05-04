@@ -35,6 +35,11 @@ The Travel Memory application has been developed using the MERN stack
 1. `npm install`
    <img width="1332" height="310" alt="image" src="https://github.com/user-attachments/assets/c15b52d0-d511-470c-a367-1d504849b32f" />
 ### Step 6: Configure Environment Variables
+Use MongoDB Atlas instead of local MongoDB
+Go to MongoDB Atlas >> Create cluster >> Whitelist: 0.0.0.0/0 (for now)
+Copy connection string
 1. `nano .env`
-    1. `MONGO_URI=mongodb+srv://user:password@cluster.mongodb.net/travelmemory`
+    1. `MONGO_URI=mongodb+srv://TravelAdmin:<db_password>@clustersuhail.pvtglfc.mongodb.net/?appName=ClusterSuhail`
     2. `PORT=3001`
+  
+
