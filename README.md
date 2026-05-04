@@ -9,9 +9,9 @@ The Travel Memory application has been developed using the MERN stack
 1. Go to AWS Console → EC2
 2. Click Launch Instance
 3. Configure:
-    AMI: Ubuntu 
-    Instance type: t2.micro (free tier)
-    Key pair: create/download
-    Security Group:
-     1. SSH → 22 (Your IP)
-     2. HTTP → 80 (Anywhere)
+    1. AMI: Ubuntu 
+    2. Instance type: t2.micro (free tier)
+    3. Key pair: create/download
+    4. Security Group:
+         1. SSH → 22 (Your IP)
+         2. HTTP → 80 (Anywhere)
