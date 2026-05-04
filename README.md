@@ -20,3 +20,13 @@ The Travel Memory application has been developed using the MERN stack
    <img width="975" height="648" alt="image" src="https://github.com/user-attachments/assets/362ab5e8-abde-40ab-ac4f-07e910dc742b" />
 
 #### Step 3: Install Required Software
+1. `sudo apt update && sudo apt upgrade -y`
+2. Install Node.js (LTS)
+`curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
+`sudo apt install -y nodejs`
+3. Install Git
+`sudo apt install git -y`
+4. Install Nginx
+`sudo apt install nginx -y`
+5. Install PM2 (process manager)
+`sudo npm install -g pm2`
