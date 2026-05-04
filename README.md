@@ -15,3 +15,6 @@ The Travel Memory application has been developed using the MERN stack
     4. Security Group:
          1. SSH → 22 (Your IP)
          2. HTTP → 80 (Anywhere)
+#### Step 2: Connect to EC2
+1. 'ssh -i PEM_KEY.pem ubuntu@13.203.155.187'
+#### Step 3: Install Required Software
