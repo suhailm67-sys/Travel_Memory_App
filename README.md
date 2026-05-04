@@ -41,9 +41,14 @@ Use MongoDB Atlas instead of local MongoDB. Go to MongoDB Atlas >> Create cluste
     2. `PORT=3001`
 #### Step 7: Start Backend with PM2
 1. Start PM2 - `pm2 start index.js --name travelmemory-backend`
+   <img width="1928" height="288" alt="image" src="https://github.com/user-attachments/assets/84c29ed5-831c-469a-89b9-5cc1fe64bd39" />
 2. Save - `pm2 save`
+   <img width="1216" height="122" alt="image" src="https://github.com/user-attachments/assets/88c9a9bf-d7bd-49b2-b67e-e80d4641a4c6" />
 3. Startup - `pm2 startup`
+   <img width="1996" height="184" alt="image" src="https://github.com/user-attachments/assets/4857bf46-72e0-4ab4-8789-512e1eb66578" />
 4. Status - `pm2 status`
+   <img width="1570" height="204" alt="image" src="https://github.com/user-attachments/assets/c5a289ce-0abe-4d44-be29-1ffebf213091" />
+
 #### Step 8: Configure Nginx Reverse Proxy
 1. Edit default config: `sudo nano /etc/nginx/sites-available/default`
 2. Replace inside server {} block:
@@ -61,5 +66,26 @@ Use MongoDB Atlas instead of local MongoDB. Go to MongoDB Atlas >> Create cluste
         proxy_cache_bypass $http_upgrade;
     }
    }
-
-
+#### Step 9: Restart Nginx
+1. `sudo nginx -t` <img width="1294" height="98" alt="image" src="https://github.com/user-attachments/assets/36323997-87aa-4f13-8ef7-47f432a6b953" />
+2. `sudo systemctl restart nginx` <img width="2022" height="610" alt="image" src="https://github.com/user-attachments/assets/f00bb2d3-a6a9-4aee-90a4-3161d5c74d1c" />
+#### Step 10: Test Backend
+Open browser: `http://13.203.155.187`
+#### Step 11: Insert Sample Data (Testing)
+Use Postman or curl:
+```
+curl -X POST http://your-ec2-public-ip/api/trips \
+-H "Content-Type: application/json" \
+-d '{
+    "tripName": "Incredible India",
+    "startDateOfJourney": "19-03-2022",
+    "endDateOfJourney": "27-03-2022",
+    "nameOfHotels":"Hotel Namaste, Backpackers Club",
+    "placesVisited":"Delhi, Kolkata, Chennai, Mumbai",
+    "totalCost": 800000,
+    "tripType": "leisure",
+    "experience": "Lorem Ipsum...",
+    "image": "https://t3.ftcdn.net/jpg/03/04/85/26/360_F_304852693_nSOn9KvUgafgvZ6wM0CNaULYUa7xXBkA.jpg",
+    "shortDescription":"India is a wonderful country",
+    "featured": true
+}'
