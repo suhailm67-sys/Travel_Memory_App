@@ -30,3 +30,10 @@ The Travel Memory application has been developed using the MERN stack
 `sudo apt install nginx -y`
 5. Install PM2 (process manager)
 `sudo npm install -g pm2`
+#### Step 4: Clone Repository
+1. `git clone https://github.com/suhailm67-sys/Travel_Memory_App.git`
+2. `cd Travel_Memory_App/backend`
+#### Step 5: Install Backend Dependencies
+1. `npm install`
+   <img width="1332" height="310" alt="image" src="https://github.com/user-attachments/assets/c15b52d0-d511-470c-a367-1d504849b32f" />
+### Step 6: Configure Environment Variables
