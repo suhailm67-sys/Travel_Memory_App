@@ -47,7 +47,7 @@ Use MongoDB Atlas instead of local MongoDB. Go to MongoDB Atlas >> Create cluste
 #### Step 8: Configure Nginx Reverse Proxy
 1. Edit default config: `sudo nano /etc/nginx/sites-available/default`
 2. Replace inside server {} block:
-   server {
+   ```server {
     listen 80;
     server_name _;
 
@@ -59,4 +59,4 @@ Use MongoDB Atlas instead of local MongoDB. Go to MongoDB Atlas >> Create cluste
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
     }
-   }
+   }```
