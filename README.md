@@ -13,5 +13,5 @@ The Travel Memory application has been developed using the MERN stack
     Instance type: t2.micro (free tier)
     Key pair: create/download
     Security Group:
-      SSH → 22 (Your IP)
-      HTTP → 80 (Anywhere)
+     1. SSH → 22 (Your IP)
+     2. HTTP → 80 (Anywhere)
