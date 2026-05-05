@@ -106,6 +106,24 @@ In AWS Console:
 1. Go to EC2 → Instances
 2. Select your working instance
 3. Click Actions → Image and templates → Create Image
-Fill:
+    Fill:
 1. Name: travelmemory-ami
 2. Leave defaults
+<img width="1390" height="1362" alt="image" src="https://github.com/user-attachments/assets/ff2b34fd-f33b-4529-9885-9afd6104b444" />
+#### STEP 2: Create Launch Template
+1. Go to EC2 → Launch Templates
+2. Click Create Launch Template
+    Fill:
+    Basic:
+    1. Name: travelmemory-template
+    AMI:
+    1. Select your created AMI
+    Instance Type:
+    1. t2.micro
+    Key Pair:
+    1. Select your key
+    Security Group:
+    Create/select one with:
+    1. HTTP → 80 → 0.0.0.0/0
+    2. SSH → 22 → Your IP
+
