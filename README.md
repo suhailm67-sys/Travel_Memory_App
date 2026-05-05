@@ -99,3 +99,13 @@ curl -X POST http://your-ec2-public-ip/api/trips \
    <img width="928" height="128" alt="image" src="https://github.com/user-attachments/assets/a23fdcc7-444f-483a-a5b4-09b3fe1a69bc" />
 2. Start frontend: `npm start` <img width="1054" height="366" alt="image" src="https://github.com/user-attachments/assets/0821b13b-321c-49a1-a4b8-fc44fc7a5d15" />
 3. Test if the page is working in browser using the URL: <img width="3982" height="1802" alt="image" src="https://github.com/user-attachments/assets/bc17e3bf-7ac3-4d19-907f-8052243b8712" />
+
+## Task 3: Scaling the Application:
+#### STEP 1: Create AMI (Golden Image) - This captures your working server.
+In AWS Console:
+1. Go to EC2 → Instances
+2. Select your working instance
+3. Click Actions → Image and templates → Create Image
+Fill:
+1. Name: travelmemory-ami
+2. Leave defaults
