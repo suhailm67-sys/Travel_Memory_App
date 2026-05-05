@@ -142,3 +142,48 @@ In AWS Console:
         1. Path: /
         2. Port: traffic port
     3. Click Next → Create
+       <img width="1482" height="1100" alt="image" src="https://github.com/user-attachments/assets/2ad8e3b5-7683-49f9-a783-4ae043d369b7" />
+
+#### STEP 4: Create Load Balancer
+1. Go to EC2 → Load Balancers → Create
+2. Choose:
+    1. Application Load Balancer
+3. Configure:
+    1. Basic:
+        1. Name: travelmemory-alb
+        2. Scheme: Internet-facing
+    2. Network:
+        1. Select 2 or more subnets (VERY IMPORTANT)
+    3. Security Group:
+        1. Allow:
+            1. HTTP (80) → 0.0.0.0/0
+        2. Listener:
+            1. Protocol: HTTP
+            2. Forward to → travelmemory-tg
+4. Click Create Load Balancer
+   <img width="1478" height="1246" alt="image" src="https://github.com/user-attachments/assets/37dad95c-e4b4-4c29-81ea-382f174ddcfb" />
+
+#### STEP 5: Create Auto Scaling Group
+1. Go to EC2 → Auto Scaling Groups → Create
+2. Choose Launch Template
+    1. Select: travelmemory-template
+3. Network
+    1. Choose same VPC
+    2. Select 2 subnets (multi-AZ)
+4. Attach Load Balancer
+    1. Select:
+        1. Existing Load Balancer
+        2. Choose travelmemory-alb
+        3. Select Target Group: travelmemory-tg
+5. Group Size
+    1. Set:
+        1. Desired: 2
+        2. Min: 2
+        3. Max: 4
+6. Scaling Policy
+    1. Choose:
+        1. Target tracking
+    2. Set:
+        1. CPU Utilization: 50%
+7. Create ASG
+   <img width="2900" height="1584" alt="image" src="https://github.com/user-attachments/assets/0525f05c-6a1c-40b0-afdc-b6dcc58b45d1" />
