@@ -187,3 +187,6 @@ In AWS Console:
         1. CPU Utilization: 50%
 7. Create ASG
    <img width="2900" height="1584" alt="image" src="https://github.com/user-attachments/assets/0525f05c-6a1c-40b0-afdc-b6dcc58b45d1" />
+
+#### STEP 6: Verify is multiple instances are running as per the scaling group
+<img width="975" height="88" alt="image" src="https://github.com/user-attachments/assets/51f5421f-e8c3-4e1b-bfde-060d9df80b85" />
