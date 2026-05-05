@@ -12,7 +12,9 @@ The Travel Memory application has been developed using the MERN stack
     3. Key pair: create/download
     4. Security Group:
          1. SSH → 22 (Anywhere)
-         2. HTTP → 80 (Anywhere)
+         2. HTTP → 80 (Anywhere) <img width="3002" height="344" alt="image" src="https://github.com/user-attachments/assets/18514d88-233e-4f87-a8bb-1ed775cc41a4" />
+            <img width="3438" height="66" alt="image" src="https://github.com/user-attachments/assets/f0e7a28b-b6ef-4e67-8e26-66826fd537bd" />
+
 #### Step 2: Connect to EC2
 1. `ssh -i PEM_KEY.pem ubuntu@65.0.7.136`
    <img width="2402" height="106" alt="image" src="https://github.com/user-attachments/assets/28cf3bdb-979b-4f1e-9b25-e2b05d8ffdbf" />
