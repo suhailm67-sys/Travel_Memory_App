@@ -1,7 +1,7 @@
 # Travel Memory Application Deployment
 The Travel Memory application has been developed using the MERN stack
 
-## Task 1. Backend Configuration: Clone the repository and navigate to the backend directory
+## Task 1: Backend Configuration: Clone the repository and navigate to the backend directory
 
 #### Step 1: Launch EC2 Instance
 1. Go to AWS Console → EC2
@@ -92,3 +92,9 @@ curl -X POST http://your-ec2-public-ip/api/trips \
 ```
 #### Step 12: Start Server
 1. `node index.js` - <img width="1306" height="88" alt="image" src="https://github.com/user-attachments/assets/2ed9f673-c525-4ebf-9af0-17faf20aac45" />
+
+## Task 2: Frontend and Backend Connection:
+1. For frontend, need to create .env file and put the following content (remember to change it based on your requirements): `REACT_APP_BACKEND_URL=http://localhost:3001`
+   <img width="928" height="128" alt="image" src="https://github.com/user-attachments/assets/a23fdcc7-444f-483a-a5b4-09b3fe1a69bc" />
+2. Start frontend: `npm start` <img width="1054" height="366" alt="image" src="https://github.com/user-attachments/assets/0821b13b-321c-49a1-a4b8-fc44fc7a5d15" />
+3. Test if the page is working in browser using the URL: <img width="3982" height="1802" alt="image" src="https://github.com/user-attachments/assets/bc17e3bf-7ac3-4d19-907f-8052243b8712" />
