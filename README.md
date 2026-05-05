@@ -117,16 +117,28 @@ In AWS Console:
    ```
    Fill:
    Basic:
-   1. Name: travelmemory-template
+    Name: travelmemory-template
    AMI:
-   1. Select your created AMI
+    Select your created AMI
    Instance Type:
-   1. t2.micro
+    t2.micro
    Key Pair:
-   1. Select your key
+    Select your key
    Security Group:
    Create/select one with:
    1. HTTP → 80 → 0.0.0.0/0
    2. SSH → 22 → Your IP
-``
-#### STEP 2: Create Launch Template
+`` <img width="1526" height="1496" alt="image" src="https://github.com/user-attachments/assets/c908696b-6177-400f-8099-2f06c3708daf" />
+
+#### STEP 3: Create Target Group
+1. Go to EC2 → Target Groups
+2. Click Create target group
+    Settings:
+        1. Type: Instances
+        2. Protocol: HTTP
+        3. Port: 80
+        4. Name: travelmemory-tg
+    Health Check:
+        1. Path: /
+        2. Port: traffic port
+    Click Next → Create
