@@ -14,9 +14,8 @@ The Travel Memory application has been developed using the MERN stack
          1. SSH → 22 (Anywhere)
          2. HTTP → 80 (Anywhere)
 #### Step 2: Connect to EC2
-1. `ssh -i PEM_KEY.pem ubuntu@13.203.155.187`
-   <img width="975" height="648" alt="image" src="https://github.com/user-attachments/assets/362ab5e8-abde-40ab-ac4f-07e910dc742b" />
-
+1. `ssh -i PEM_KEY.pem ubuntu@65.0.7.136`
+   <img width="2402" height="106" alt="image" src="https://github.com/user-attachments/assets/28cf3bdb-979b-4f1e-9b25-e2b05d8ffdbf" />
 #### Step 3: Install Required Software
 1. Update app - `sudo apt update && sudo apt upgrade -y`
 2. Install Node.js (LTS) - 
@@ -70,7 +69,7 @@ Use MongoDB Atlas instead of local MongoDB. Go to MongoDB Atlas >> Create cluste
 1. `sudo nginx -t` <img width="1294" height="98" alt="image" src="https://github.com/user-attachments/assets/36323997-87aa-4f13-8ef7-47f432a6b953" />
 2. `sudo systemctl restart nginx` <img width="2022" height="610" alt="image" src="https://github.com/user-attachments/assets/f00bb2d3-a6a9-4aee-90a4-3161d5c74d1c" />
 #### Step 10: Test Backend
-Open browser: `http://13.203.155.187`
+Open browser: `http://65.0.7.136`
 #### Step 11: Insert Sample Data (Testing)
 Use Postman or curl:
 ```
