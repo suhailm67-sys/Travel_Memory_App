@@ -133,12 +133,12 @@ In AWS Console:
 #### STEP 3: Create Target Group
 1. Go to EC2 → Target Groups
 2. Click Create target group
-    Settings:
+    1. Settings:
         1. Type: Instances
         2. Protocol: HTTP
         3. Port: 80
         4. Name: travelmemory-tg
-    Health Check:
+    2. Health Check:
         1. Path: /
         2. Port: traffic port
-    Click Next → Create
+    3. Click Next → Create
