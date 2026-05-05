@@ -89,3 +89,6 @@ curl -X POST http://your-ec2-public-ip/api/trips \
     "shortDescription":"India is a wonderful country",
     "featured": true
 }'
+```
+#### Step 12: Start Server
+1. `node index.js` - <img width="1306" height="88" alt="image" src="https://github.com/user-attachments/assets/2ed9f673-c525-4ebf-9af0-17faf20aac45" />
