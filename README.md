@@ -99,7 +99,8 @@ Open a new CMD and connect to the EC2 instance to start the front end part
 1. For frontend, need to create .env file and put the following content (remember to change it based on your requirements): `REACT_APP_BACKEND_URL=http://localhost:3001`
    <img width="928" height="128" alt="image" src="https://github.com/user-attachments/assets/a23fdcc7-444f-483a-a5b4-09b3fe1a69bc" />
 2. Start frontend: `npm start` <img width="1054" height="366" alt="image" src="https://github.com/user-attachments/assets/0821b13b-321c-49a1-a4b8-fc44fc7a5d15" />
-3. Test if the page is working in browser using the URL: <img width="3982" height="1802" alt="image" src="https://github.com/user-attachments/assets/bc17e3bf-7ac3-4d19-907f-8052243b8712" />
+3. Test if the page is working in browser using the URL: <img width="3982" height="1802" alt="image" src="https://github.com/user-attachments/assets/bc17e3bf-7ac3-4d19-907f-8052243b8712" /> <img width="975" height="384" alt="image" src="https://github.com/user-attachments/assets/334cb573-9efe-4067-ae39-2cb50125609f" />
+
 
 ## Task 3: Scaling the Application:
 #### STEP 1: Create AMI (Golden Image) - This captures your working server.
