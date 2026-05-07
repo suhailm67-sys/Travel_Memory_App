@@ -189,4 +189,33 @@ In AWS Console:
    <img width="2900" height="1584" alt="image" src="https://github.com/user-attachments/assets/0525f05c-6a1c-40b0-afdc-b6dcc58b45d1" />
 
 #### STEP 6: Verify is multiple instances are running as per the scaling group
-<img width="975" height="88" alt="image" src="https://github.com/user-attachments/assets/51f5421f-e8c3-4e1b-bfde-060d9df80b85" />
+<img width="3566" height="308" alt="image" src="https://github.com/user-attachments/assets/6001b0e9-0f23-4408-a882-51a82fd09b37" />
+
+## Task 4. Domain Setup with Cloudflare:
+#### Step 1: Buying a domain
+1. Bought a domain from namecheap - `travelmemoryapp.xyz`
+#### Step 2: Add Domain to Cloudflare
+1. Login to: Cloudflare Dashboard
+2. Click:
+    1. Add Site
+3. Enter domain:
+    1. travelmemoryapp.site
+4. Choose:
+    1. Free Plan
+<img width="975" height="145" alt="image" src="https://github.com/user-attachments/assets/38b86655-b122-496d-99af-8a2b523f0392" />
+
+#### STEP 3: Change Nameservers
+1. Cloudflare will give nameservers like:
+    1. `leanna.ns.cloudflare.com`
+    2. `ricardo.ns.cloudflare.com`
+3. Go to Your Domain Registrar: Replace existing nameservers with Cloudflare nameservers.
+
+#### STEP 4: Create CNAME Record (IMPORTANT)
+1. Go to: DNS → Records → Add Record
+Create:
+Field	Value
+Type	CNAME
+Name	www
+Target	your-alb-dns.amazonaws.com
+Proxy Status	Proxied
+
