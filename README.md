@@ -202,20 +202,16 @@ In AWS Console:
     1. travelmemoryapp.site
 4. Choose:
     1. Free Plan
-<img width="975" height="145" alt="image" src="https://github.com/user-attachments/assets/38b86655-b122-496d-99af-8a2b523f0392" />
 
-#### STEP 3: Change Nameservers
+#### STEP 3: Create CNAME Record
+1. Go to: DNS → Records → Add Record
+    1. Create: `CNAME` `www` `travelmemory-alb-184073069.ap-south-1.elb.amazonaws.com`
+#### STEP 4: Create A Record (Frontend EC2)
+1. Add another record: `A` `@` `13.203.155.187` <img width="975" height="145" alt="image" src="https://github.com/user-attachments/assets/38b86655-b122-496d-99af-8a2b523f0392" />
+2. Continue to activation
+#### STEP 5: Change Nameservers
 1. Cloudflare will give nameservers like:
     1. `leanna.ns.cloudflare.com`
     2. `ricardo.ns.cloudflare.com`
-3. Go to Your Domain Registrar: Replace existing nameservers with Cloudflare nameservers.
-
-#### STEP 4: Create CNAME Record (IMPORTANT)
-1. Go to: DNS → Records → Add Record
-Create:
-Field	Value
-Type	CNAME
-Name	www
-Target	your-alb-dns.amazonaws.com
-Proxy Status	Proxied
+2. Go to Your Domain Registrar: Replace existing nameservers with Cloudflare nameservers.
 
