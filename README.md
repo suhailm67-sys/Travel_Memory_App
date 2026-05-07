@@ -201,9 +201,10 @@ In AWS Console:
 2. Click:
     1. Add Site
 3. Enter domain:
-    1. travelmemoryapp.site
+    1. travelmemoryapp.xyz
 4. Choose:
     1. Free Plan
+<img width="2674" height="206" alt="image" src="https://github.com/user-attachments/assets/bd5c3990-102f-4b1c-bb0d-172a24b07f49" />
 
 #### STEP 3: Create CNAME Record
 1. Go to: DNS → Records → Add Record
@@ -216,4 +217,9 @@ In AWS Console:
     1. `leanna.ns.cloudflare.com`
     2. `ricardo.ns.cloudflare.com`
 2. Go to Your Domain Registrar: Replace existing nameservers with Cloudflare nameservers.
+
+#### After completing the domain and cloudflare part, the site will be accessable from the domain - `www.travelmemoryapp.xyz`
+
+## Task : Design a deployment architecture diagram using [draw.io](https://www.draw.io/) to visualize the flow and connections.
+<img width="928" height="1730" alt="image" src="https://github.com/user-attachments/assets/2054fe96-d611-448b-82e8-a925a8c917b0" />
 
