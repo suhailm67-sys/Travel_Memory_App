@@ -95,6 +95,7 @@ curl -X POST http://your-ec2-public-ip/api/trips \
 1. `node index.js` - <img width="1306" height="88" alt="image" src="https://github.com/user-attachments/assets/2ed9f673-c525-4ebf-9af0-17faf20aac45" />
 
 ## Task 2: Frontend and Backend Connection:
+Open a new CMD and connect to the EC2 instance to start the front end part
 1. For frontend, need to create .env file and put the following content (remember to change it based on your requirements): `REACT_APP_BACKEND_URL=http://localhost:3001`
    <img width="928" height="128" alt="image" src="https://github.com/user-attachments/assets/a23fdcc7-444f-483a-a5b4-09b3fe1a69bc" />
 2. Start frontend: `npm start` <img width="1054" height="366" alt="image" src="https://github.com/user-attachments/assets/0821b13b-321c-49a1-a4b8-fc44fc7a5d15" />
