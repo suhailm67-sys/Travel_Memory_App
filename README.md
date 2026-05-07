@@ -222,4 +222,4 @@ In AWS Console:
 
 ## Task : Design a deployment architecture diagram using [draw.io](https://www.draw.io/) to visualize the flow and connections.
 <img width="928" height="1730" alt="image" src="https://github.com/user-attachments/assets/2054fe96-d611-448b-82e8-a925a8c917b0" />
-
+<img width="1536" height="1024" alt="Deployment Architecture Diagram" src="https://github.com/user-attachments/assets/6b547cfe-046d-440c-85fa-2352cfb6d453" />
