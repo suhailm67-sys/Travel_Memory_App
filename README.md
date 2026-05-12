@@ -1,5 +1,6 @@
 # Travel Memory Application Deployment
-The Travel Memory application has been developed using the MERN stack
+The Travel Memory application has been developed using the MERN stack. This project aims to deploy a production-ready MERN application on AWS, using separate EC2 instances for frontend and backend, NGINX as a reverse proxy, Cloudflare for secure public access, and an AWS Application Load Balancer to handle failures and distribute traffic.
+
 
 ## Task 1: Backend Configuration: Clone the repository and navigate to the backend directory
 
