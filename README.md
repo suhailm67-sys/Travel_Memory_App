@@ -1,14 +1,27 @@
 # Travel Memory Application Deployment
 The Travel Memory application has been developed using the MERN stack. This project aims to deploy a production-ready MERN application on AWS, using separate EC2 instances for frontend and backend, NGINX as a reverse proxy, Cloudflare for secure public access, and an AWS Application Load Balancer to handle failures and distribute traffic.
 
-# Project Objectives and Scope
+## Project Objectives and Scope
 1. Deploy a MERN application on AWS EC2 instances.
-2. Securely expose the application over HTTPS using Cloudflare.
+2. Centralize traffic through NGINX, routing frontend and backend paths appropriately.
 3. Use an AWS Application Load Balancer (ALB) so that backend failures on one instance do not cause downtime.
-4. Centralize traffic through NGINX, routing frontend and backend paths appropriately.
+4. Securely expose the application over HTTPS using Cloudflare.
+
+## Tech Stack
+1. Frontend
+    1. React.js
+    2. CSS
+2. Backend
+    1. Node.js
+    2. MongoDB (Atlas)
+3. DevOps & Infrastructure
+    1. AWS EC2 (Compute)
+    2. Nginx (Reverse Proxy + Static Hosting)
+    3. PM2 (Process Manager)
+    4. AWS Application Load Balancer (ALB)
+    5. Cloudflare (DNS, CDN, SSL)
 
 ## Task 1: Backend Configuration: Clone the repository and navigate to the backend directory
-
 #### Step 1: Launch EC2 Instance
 1. Go to AWS Console → EC2
 2. Click Launch Instance
