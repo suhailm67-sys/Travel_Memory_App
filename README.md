@@ -14,7 +14,7 @@ The Travel Memory application has been developed using the MERN stack. This proj
 2. Backend
     1. Node.js
     2. MongoDB (Atlas)
-3. DevOps & Infrastructure
+3. Infrastructure
     1. AWS EC2 (Compute)
     2. Nginx (Reverse Proxy + Static Hosting)
     3. PM2 (Process Manager)
