@@ -237,7 +237,7 @@ In AWS Console:
     2. `ricardo.ns.cloudflare.com`
 2. Go to Your Domain Registrar: Replace existing nameservers with Cloudflare nameservers.
 
-#### After completing the domain and cloudflare part, the site will be accessable from the domain - `www.travelmemoryapp.xyz`
+#### After completing the domain and cloudflare part, the site will be accessable from the domain - `www.travelmemoryapp.xyz` or `https://travelmemoryapp.xyz/addexperience`
 
 ## Task : Design a deployment architecture diagram using [draw.io](https://www.draw.io/) to visualize the flow and connections.
 <img width="928" height="1730" alt="image" src="https://github.com/user-attachments/assets/2054fe96-d611-448b-82e8-a925a8c917b0" />
